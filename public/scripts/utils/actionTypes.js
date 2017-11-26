@@ -1,0 +1,4 @@
+module.exports = {
+	UPDATE_SEARCH: 'UPDATE_SEARCH',
+	GET_TWEETS: 'GET_TWEETS'
+};

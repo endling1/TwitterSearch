@@ -1,0 +1,1 @@
+exports.GET_TWEETS = 'http://localhost:3000/search?q=';
