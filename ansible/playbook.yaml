@@ -1,0 +1,18 @@
+---
+- hosts: TestInstances
+  vars:
+    update_all: false
+    install_node: true
+  tasks:
+    - name: update packages
+      yum:
+        name: '*'
+        state: latest
+      become: true
+      when: update_all
+    - name: install node
+      yum:
+        name: nodejs
+        state: latest
+      become: true
+      when: install_node
